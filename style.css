@@ -1,0 +1,86 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55rbbmSZ5H7ahZtJ-XTbfk7k1uSVXV8maD1kRWLxA9n2TYlLcol_N8KIA&s=10);
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55rbbmSZ5H7ahZtJ-XTbfk7k1uSVXV8maD1kRWLxA9n2TYlLcol_N8KIA&s=10)  
+         }
+
+        .container {
+            background: white;
+            width: 350px;
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .dice {
+            width: 150px;
+            height: 150px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcci96owQ2GW1M-Ios1LiU4cFQr4F6sBKFEf8f3gqjjw&s=10);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 5px solid #333;
+            border-radius: 20px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        button {
+            background: #66ddea;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #4c4cd5;
+            transform: scale(1.05);
+        }
+
+        #result {
+            font-size: 20px;
+            color: #444;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .rolling {
+            animation: roll 0.5s;
+        }
+
+        @keyframes roll {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.1);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
